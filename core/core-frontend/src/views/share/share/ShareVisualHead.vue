@@ -56,9 +56,11 @@
                   :content="t('commons.edit') + t('chart.indicator_suffix')"
                   placement="top"
                 >
-                  <Icon name="icon_edit_outlined" class="edit-uuid-icon">
-                    <icon_edit_outlined class="svg-icon edit-uuid-icon" />
-                  </Icon>
+                  <el-icon class="edit-uuid-icon" style="cursor: pointer">
+                    <Icon class="edit-uuid-icon">
+                      <icon_edit_outlined class="svg-icon edit-uuid-icon" />
+                    </Icon>
+                  </el-icon>
                 </el-tooltip>
               </div>
               <div class="input-suffix-btn" v-if="linkCustom" @click.stop="resetUuid">
@@ -68,12 +70,16 @@
                   :content="t('commons.cancel')"
                   placement="top"
                 >
-                  <Icon name="icon_close_outlined"><icon_close_outlined class="svg-icon" /></Icon>
+                  <el-icon style="cursor: pointer">
+                    <Icon><icon_close_outlined class="svg-icon" /></Icon>
+                  </el-icon>
                 </el-tooltip>
               </div>
               <div class="input-suffix-btn done" v-if="linkCustom" @click.stop="finishEditUuid">
                 <el-tooltip class="item" effect="dark" :content="t('commons.save')" placement="top">
-                  <Icon name="icon_done_outlined"><icon_done_outlined class="svg-icon" /></Icon>
+                  <el-icon style="cursor: pointer">
+                    <Icon><icon_done_outlined class="svg-icon" /></Icon>
+                  </el-icon>
                 </el-tooltip>
               </div>
             </div>
@@ -150,7 +156,9 @@
                     :content="t('commons.copy')"
                     placement="top"
                   >
-                    <Icon name="de-copy"><deCopy class="svg-icon" /></Icon>
+                    <el-icon style="cursor: pointer">
+                      <Icon><deCopy class="svg-icon" /></Icon>
+                    </el-icon>
                   </el-tooltip>
                 </div>
                 <div class="input-suffix-btn" @click="resetPwd">
@@ -160,9 +168,9 @@
                     :content="t('commons.reset')"
                     placement="top"
                   >
-                    <Icon name="icon_refresh_outlined"
-                      ><icon_refresh_outlined class="svg-icon"
-                    /></Icon>
+                    <el-icon style="cursor: pointer">
+                      <Icon><icon_refresh_outlined class="svg-icon" /></Icon>
+                    </el-icon>
                   </el-tooltip>
                 </div>
               </div>
